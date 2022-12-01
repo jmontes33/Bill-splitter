@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Bill Splitter</title>
+</head>
+<body>
+    <h1>BILL SPLITTER</h1>
+    <div class="main-container">
+        <div class="second-container" id="second-container">
+            <div class="inputs-container">
+                <div class="bill-container">
+                    <label for="billInput">Bill</label> <br>
+                    <input id="billInput" type="text" placeholder="0.0">
+                </div>
+                <div class="people-container">
+                    <label for="peopleInput">Number of people</label> <br>
+                    <input id="peopleInput" type="text" placeholder="0">
+                </div>
+            </div>
+            <div class="result-container">
+                <label for="amountPerson">Amount / person</label>
+                <div class="test">
+                <div id="amountPerson">$0.0</div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons-container">
+            <button class="enter-btn" id="enter-btn" onclick="splitter()">ENTER</button>
+            <button class="reset-btn" id="reset-btn" onclick="resetFun()">RESET</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
